@@ -39,7 +39,7 @@ ul{
 li {
     margin: 20px 0px;
     font-size: 24px;
-    transition: all 0.6s;
+    transition: all 0.4s;
 }
 
 li:hover{

@@ -1,0 +1,24 @@
+/*
+Flexbox! propiedad de display
+    flex         -> block
+    flex-inline  -> inline
+
+### Propiedades del contenedor ###
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+### Propiedades de los elementos ###
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+Guía completa:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/

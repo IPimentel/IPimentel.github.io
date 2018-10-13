@@ -1,0 +1,21 @@
+body {
+    background: black;
+    margin: 25px;
+    font-family: Arial;
+    font-size: 1.5em;
+}
+
+.contenedor {
+    background: lime;
+}
+
+.contenedor div {
+    padding: 5px;
+    background: #444;
+    color: #EEE;
+}
+
+.contenedor div.diferente {
+    background: #888;
+    color: #222;
+}

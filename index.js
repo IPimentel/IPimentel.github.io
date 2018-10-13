@@ -18,3 +18,11 @@
 
 - Dar push a su portafolio
 */
+
+let semana_1 = document.querySelector(`#semana_1`)
+
+function mostrar(){
+    semana_1.classList.add("mostrar");
+}
+
+semana_1.addEventListener("click",mostrar)

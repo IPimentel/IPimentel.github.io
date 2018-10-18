@@ -40,15 +40,23 @@ function juego(e){
 }
 */
 
-
+/*
 function juego(e){
   let opciones = [ "A", "B", "C", "D", "E"];
   let random = opciones[Math.floor(opciones.length * Math.random())]
   console.log(random)
   document.querySelector(`#jugador_1`).src = e.target.src;
 }
+*/
 
 
+function juego(e){
+  let opciones = [ document.querySelector(`#rock`).src, document.querySelector(`#paper`).src, document.querySelector(`#scissors`).src, document.querySelector(`#lizard`).src, document.querySelector(`#spock`).src];
+  let random = opciones[Math.floor(opciones.length * Math.random())]
+  console.log(ramdom)
+  document.querySelector(`#jugador_1`).src = e.target.src;
+  document.querySelector(`#jugador_2`).src = random;
+}
 
 
 

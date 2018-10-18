@@ -1,0 +1,24 @@
+/*
+    El diseño responsivo tiene como objetivo
+    adaptar la estructura de tu contenido web
+    a diferentes tamaños de pantalla, se 
+    utilizan media queries para lograrlo
+    Estructura de una media query:
+                       Condición
+                           \/
+    @media all and (max-width: 800px) {  }
+            /\                         /\
+        tipo de pantalla            Reglas
+
+    tipos de pantalla:
+      - all, screen, print, speech
+*/
+body {
+    background: black;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        background: purple;
+    }
+}

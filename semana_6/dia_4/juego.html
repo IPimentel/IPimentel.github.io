@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra, papel, tijeras, lagarto y Spock</title>
+    <link rel="stylesheet" href="juego.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <span><a href="#miModal">Modo de juego</a></span>
+        <span><a href="#miModal">Instrucciones</a></span>
+    </div>
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <a href="#">X</a>
+                <h2>1 Jugador</h2>
+                <h2>2 Jugadores</h2>
+            </div>
+        </div>
+    <div class="contenedor">
+        <div class="titulo">
+            PIEDRA, PAPEL, TIJERAS, <br> LAGARTO Y SPOCK
+        </div>
+    </div>
+    <div class="contenedor_resultado">
+        <p class="leyenda"></p>
+    </div>
+    <div class="versus">
+        <img id="jugador_1" src="Iconos/random.gif">
+        VS
+        <img id="jugador_2" src="Iconos/random.gif">
+    </div>  
+    <div class="opciones">
+        <img id="rock" src="Iconos/rock.png">
+        <img id="paper" src="Iconos/paper.png">
+        <img id="scissors" src="Iconos/scissors.png">
+        <img id="lizard" src="Iconos/lizard.png">
+        <img id="spock"  src="Iconos/spock.png">
+    </div>
+    <div class="marcador">
+        <div class="jugador_1">
+            <span>Jugador 1</span>
+            <span class="score_1">0</span>
+        </div>
+        <div class="jugador_2">
+            <span>CPU</span>
+            <span class="score_2">0</span>
+        </div>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>

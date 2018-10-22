@@ -1,0 +1,389 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(89, 60, 255);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header span {
+    font-size: 1em;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header span:hover {
+    font-size: 1.1em;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_resultado {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.leyenda {
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    margin: 0px 0px 0px;
+}
+
+.titulo {
+    font-size: 3.3em;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    margin: 50px 0px 0px;
+}
+
+.versus {
+    display: flex;
+    justify-content: center;
+    font-size: 3.3em;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    margin: 40px 450px 0px;
+    align-items: center;
+}
+
+.versus img {
+    height: 130px;
+    border-radius: 1000px;
+    margin: 0px 17px;
+    box-shadow: 0px 2px 25px #00000057;
+}
+
+.marcador {
+    font-size: 2.3em;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    margin: -170px 0px 0px 0px;
+}
+
+.jugador_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+}
+
+.jugador_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.marcador span {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+.score_1 {
+    font-size: 1.7em; 
+}
+
+.score_2 {
+    font-size: 1.7em; 
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    margin: 90px 0px 0px 0px;
+}
+
+.opciones img {
+    height: 95px;
+    border-radius: 1000px;
+    margin: 0px 17px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.opciones img:hover {
+    height: 115px;
+
+}
+
+.modal-contenido {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background-color:white;
+    border-radius: 8px;
+    width:300px;
+    padding: 10px 20px;
+    margin: 17% auto;
+    box-shadow: 0px 2px 25px #00000057;
+  }
+
+
+
+.modal-contenido h2 a {
+    color: #999999c4;
+    text-decoration: none;
+    transition: all 0.4s
+}
+
+.modal-contenido h2 a:hover {
+  color: #263fcf;
+}
+
+.close {
+    font-size: 1.2em;
+    color: #41414157;
+    text-decoration: none;
+    padding-left: 252px;
+    transition: all 0.4s
+}
+
+.close:hover {
+  color: #cf2626;
+}
+
+   .modal-contenido h2 {
+       cursor: pointer;
+        color: #999999c4
+  }
+
+  .modal{
+    background-color: rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.7s;
+  }
+
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  #miModalIn:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .instrucciones {
+      height: 350px;
+  }
+
+  .modal-contenido-in {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    background-color:white;
+    border-radius: 8px;
+    width:400px;
+    padding: 10px 20px;
+    margin: 11% auto;
+    box-shadow: 0px 2px 25px #00000057;
+  }
+
+  .close_in {
+    font-size: 1.2em;
+    color: #41414157;
+    text-decoration: none;
+    padding-left: 350px;
+    transition: all 0.4s
+}
+
+    .close_in:hover {
+    color: #cf2626;
+    }
+
+@media all and (max-width: 800px){
+
+    body {
+        background-color: rgb(89, 60, 255);
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        position: unset;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    
+    .header a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .header span {
+        font-size: 1.5em;
+        margin-left: 0px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .header span:hover {
+        font-size: 1.5em;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: center;    }
+    
+    .contenedor_resultado {
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .leyenda {
+        font-size: 2.4em;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        margin: 0px 0px 0px;
+    }
+    
+    .titulo {
+        font-size: 2.5em;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        margin: 20px 0px 0px;
+    }   
+
+    .versus {
+        display: flex;
+        justify-content: space-around;
+        font-size: 3.3em;
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        margin: 90px 0px 0px;
+        align-items: center;
+    } 
+    
+    .versus img {
+        height: 130px;
+        border-radius: 1000px;
+        margin: 0px 17px;
+    }
+
+    .opciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .opciones img {
+        height: 95px;
+        border-radius: 1000px;
+        margin: 17px 17px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .opciones img:hover {
+        height: 115px;
+
+    }
+
+    .marcador {
+        font-size: 1.5em;
+        font-family: 'Fredoka One', cursive;
+        color: white;
+        justify-content: space-around;
+        display: flex;
+        margin: 50px 0px 0px 0px;
+    }
+    
+    .jugador_1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; 
+    }
+
+    .jugador_2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .marcador span {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .score_1 {
+        margin-top: 10px;
+        font-size: 1.3em; 
+    }
+
+    .score_2 {
+        margin-top: 10px;
+        font-size: 1.3em; 
+    }
+
+}

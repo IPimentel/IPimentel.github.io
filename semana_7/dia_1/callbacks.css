@@ -1,0 +1,26 @@
+body {
+  margin: 40px;
+  background: #AAA;
+  color: white;
+  font-family: Roboto;
+}
+
+div {
+  background: #444;
+  text-align: center;
+  padding: 1.5em 3em;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+div:nth-child(odd) {
+  background: #666;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em; 
+  margin-bottom: .5em;
+  color: #444;
+  font-weight: 300;
+}

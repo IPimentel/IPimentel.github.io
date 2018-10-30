@@ -1,0 +1,45 @@
+/*
+    Grid es otro tipo de display que permite
+    declarar layouts de forma más eficiente,
+    en ciertos puntos es similar a flexbox.
+
+    Así como flexbox, grid tiene propiedades
+    para el contenedor y para los hijos.
+
+    Para utilizar de referencía recomiendo:
+    http://grid.malven.co/
+
+    Propiedades del contenedor
+        display: grid
+        grid-template
+        grid-gap
+        justify-items
+        align-items
+        justify-content
+        align-content
+        grid-auto-flow
+
+    
+    Propiedades de los hijos
+        grid-column
+        grid-row
+        justify-self
+        align-self
+
+*/
+body {
+    background: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.contenedor {
+    display: grid;
+}
+
+.contenedor div {
+    background: green;
+    color: white;
+    padding: 1em;
+}

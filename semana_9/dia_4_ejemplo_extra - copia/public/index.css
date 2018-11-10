@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #EEE;
+  color: #333;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  margin: .5em;
+  font-size: 2em
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 35em;
+  background: white;
+  border: 1pc solid rgba(0, 0, 0, .1);
+  margin: 2em auto;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.mensajes {
+  height: 350px;
+  padding: 5px;
+}
+
+.cuadro input {
+  display: block;
+  font-size: 1.5em;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.301);
+  outline: none;
+  width: 100%;
+  border: none;
+}
+
+.login,  .logout {
+  background: white;
+  padding: 15px;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1.5em;
+  margin:  5px auto;
+  text-align: center;
+}

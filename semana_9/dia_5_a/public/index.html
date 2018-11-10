@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Storage</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Firebase 🔥 Storage</h1>
+
+    <div class="contenedor">
+      <div class="form">
+        <input class="input_uno" type="file" accept="image/*">
+        <div class="guardar_uno">💾</div>
+      </div>    
+      <div class="imagen">
+        <img class="img_uno" src="">
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="form">
+        <input class="input_dos" type="file" accept="image/*">
+        <div class="guardar_dos">💾</div>
+      </div>    
+      <div class="imagen">
+        <img class="img_dos" src="">
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="form">
+        <input class="input_tres" type="file" accept="image/*">
+        <div class="guardar_tres">💾</div>
+      </div>    
+      <div class="imagen">
+        <img class="img_tres" src="">
+      </div>
+    </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC-uRa6teFYVA41JxSvOYjTNuTOIPX_TIA",
+      authDomain: "press-calculator.firebaseapp.com",
+      databaseURL: "https://press-calculator.firebaseio.com",
+      projectId: "press-calculator",
+      storageBucket: "press-calculator.appspot.com",
+      messagingSenderId: "96864252243"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

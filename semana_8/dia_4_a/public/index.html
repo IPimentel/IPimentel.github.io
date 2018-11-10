@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Firebase</title>
+</head>
+<body>
+  <h1 class="mensaje"></h1>
+  <h1 class="correo"></h1>
+  <button class="log_in">Iniciar sesión</button>
+  <button class="log_out hide">Cerrar sesión</button>
+  <button class="valor">Restaurar valor</button>
+  <button class="sumar hide">Sumar valor</button>
+  <button class="restar hide">Restar valor</button>
+  <h2 class="contador">Contador:</h2>
+  <h3>Para cambiar el contador tienes que Iniciar Sesión</h3>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC-uRa6teFYVA41JxSvOYjTNuTOIPX_TIA",
+    authDomain: "press-calculator.firebaseapp.com",
+    databaseURL: "https://press-calculator.firebaseio.com",
+    projectId: "press-calculator",
+    storageBucket: "press-calculator.appspot.com",
+    messagingSenderId: "96864252243"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+</body>
+</html>

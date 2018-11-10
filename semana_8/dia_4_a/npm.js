@@ -1,0 +1,7 @@
+/*
+
+  Antes de comenzar con firebase
+  aprenderemos sobre el manejador
+  de paquetes de node.
+
+*/

@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    background-image: url("Sprites/ground.png");
+    vertical-align: middle;
+}
+
+.header_container {
+    margin: auto 0;
+    display: flex;
+    height: 200px;
+}
+
+.link {
+    opacity: 0;
+}
+
+.link_char {
+    height: 200px;
+    width: 212px;
+    margin-left: 35vw;
+    margin-top: 14px;
+}
+
+.l_default {
+    background-image: url("Sprites/Ataque/ataque_0.png");
+    background-repeat: no-repeat;
+}
+
+.l_victoria {
+    background-image: url("Sprites/Victoria.png");
+    background-repeat: no-repeat;
+}
+
+.l_muerte {
+    animation: .75s anim_muerte; 
+    animation-fill-mode: forwards;
+ }
+
+.l_ataque {
+    animation: .5s anim_ataque;
+}
+
+.l_golpe {
+    animation: .6s anim_golpe;
+}
+
+.enemy_char {
+    position: absolute;
+    height: 200px;
+    width: 220px;
+    left: 43vw;
+}
+
+.e_default {
+    background-image: url("Sprites/Enemy/Ataque/enemy_0.png");
+    background-repeat: no-repeat;
+}
+
+.e_muerte {
+    animation: .65s anim_enemy_muerte;
+    animation-fill-mode: forwards;
+}
+
+.e_ataque {
+    animation: .65s anim_enemy_ataque;
+}
+
+.e_golpe {
+    animation: .6s anim_enemy_golpe;
+}
+
+footer {
+    height: 55vh;
+    background-image: url("Sprites/tilt.png");
+}
+
+.division {
+    height: 5vh;
+    background-image: url("Sprites/line.png");
+    background-repeat: repeat-x;
+}
+
+.vida_container {
+    position: absolute;
+    top: 36%;
+    left: 41%;
+    display:flex;
+    justify-content: center;
+}
+
+.vida {
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+    background-image: url("Sprites/Vida/vida_0.png");
+    background-size: 50px;
+    background-repeat: no-repeat
+}
+
+.medio{
+    background-image: url("Sprites/Vida/vida_1.png");
+}
+
+.vacio{
+    background-image: url("Sprites/Vida/vida_2.png"); 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 310px;
+    width: 720px;
+    background-image: url("Sprites/input.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 720px;
+    margin: 15px auto 0px;
+    padding: 25px;
+}
+
+.display {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+input {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    width: 40px;
+    height: 50px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5em;
+    outline: none;
+    border-bottom: 2px solid white;
+    margin: 0px 10px;
+}
+
+.teclas {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(3,50px);
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    grid-row-gap: 10px;
+}
+
+.casilla {
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.tecla {
+    height: 40px;
+    transition: all 0.2s;
+}
+
+.tecla:hover {
+    height: 50px;
+}
+
+
+.teclado_img {
+    margin: 10px 0px;
+    height: 310px;
+}
+
+.modal_back {
+    position: absolute;
+    background-color: #00000067;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .modal_element {
+    position: relative;
+    text-align: center;
+    background-image: url("Sprites/modal_background.png");
+    background-repeat: no-repeat;
+    background-size: 670px;
+    width: 670px;
+    height: 478px;
+    padding: 10px 10px 10px 10px;
+    margin: 13vh auto 0px;
+    box-shadow: 0px 2px 25px #00000057;
+  }
+
+  .titulo {
+    color: white;
+    font-size: 3em;
+    margin-top: 50px;
+  }
+
+  .game_over{
+      margin-top: 30px;
+  }
+
+  .palabra_resultado {
+      color:white;
+      font-size: 1.35em;
+      margin-top: 50px;
+  }
+
+  .recargar {
+      display: flex;
+      font-family: 'Press Start 2P', cursive;
+      outline: none;
+      margin: 0 auto;
+      background: none;
+      border: none;
+      margin-top: 30px;
+      color: white;
+      font-size: 1.5em;
+      cursor: pointer;
+      animation: .5s opcion infinite;
+  }
+
+.hide {
+    display:none;
+}
+
+.click {
+    opacity: .3;
+}
+
+
+@keyframes anim_muerte {
+    0% {
+        background-image: url(Sprites/Muerte/muerte_0.png);
+        background-repeat: no-repeat;
+    }
+
+    20% {
+        background-image: url(Sprites/Muerte/muerte_1.png);
+        background-repeat: no-repeat;
+    }
+
+    40% {
+        background-image: url(Sprites/Muerte/muerte_2.png);
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background-image: url(Sprites/Muerte/muerte_3.png);
+        background-repeat: no-repeat;
+    }
+
+    80% {
+        background-image: url(Sprites/Muerte/muerte_4.png);
+        background-repeat: no-repeat;
+    }
+
+    99% {
+        background-image: url(Sprites/Muerte/muerte_5.png);
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(Sprites/Muerte/muerte_6.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim_ataque {
+    0% {
+        background-image: url(Sprites/Ataque/ataque_0.png);
+        background-repeat: no-repeat;
+    }
+
+    15% {
+        background-image: url(Sprites/Ataque/ataque_2.png);
+        background-repeat: no-repeat;
+    }
+
+    30% {
+        background-image: url(Sprites/Ataque/ataque_3.png);
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url(Sprites/Ataque/ataque_4.png);
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background-image: url(Sprites/Ataque/ataque_5.png);
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background-image: url(Sprites/Ataque/ataque_6.png);
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(Sprites/Ataque/ataque_0.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim_golpe {
+    0%{
+        background-image: url(Sprites/golpe/link_golpe_0.png);
+        background-repeat: no-repeat;
+    }
+
+    50%{
+        background-image: url(Sprites/golpe/link_golpe_0.png);
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(Sprites/golpe/link_golpe_3.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim_enemy_ataque {
+    0% {
+        background-image: url(Sprites/Enemy/Ataque/enemy_0.png);
+        background-repeat: no-repeat;
+    }
+
+    25% {
+        background-image: url(Sprites/Enemy/Ataque/enemy_1.png);
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background-image: url(Sprites/Enemy/Ataque/enemy_2.png);
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background-image: url(Sprites/Enemy/Ataque/enemy_3.png);
+        background-repeat: no-repeat;
+    }
+
+    100%{
+        background-image: url(Sprites/Enemy/Ataque/enemy_0.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim_enemy_golpe {
+    0% {
+        background-image: url(Sprites/Enemy/Ataque/enemy_0.png);
+        background-repeat: no-repeat;
+    }
+
+    33% {
+        background-image: url(Sprites/Enemy/Golpe/enemy_0.png);
+        background-repeat: no-repeat;
+    }
+
+    66% {
+        background-image: url(Sprites/Enemy/Golpe/enemy_1.png);
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(Sprites/Enemy/Golpe/enemy_2.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim_enemy_muerte {
+    0% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_0.png);
+        background-repeat: no-repeat;
+    }
+
+    20% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_1.png);
+        background-repeat: no-repeat;
+    }
+
+    40% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_2.png);
+        background-repeat: no-repeat;
+    }
+
+    60% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_3.png);
+        background-repeat: no-repeat;
+    }
+
+    80% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_4.png);
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background-image: url(Sprites/Enemy/Muerte/enemy_4.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes opcion {
+    0% {
+        color: white
+    }
+
+    100% {
+        color: black
+}
+
+/*
+.container {
+    height: 100vh;
+    background-image: url("Sprites/tilt.png");
+}
+*/

@@ -1,0 +1,11 @@
+.dude {
+  width: 230px;
+  height: 298px;
+  overflow: hidden;
+  background: url('sprites.png');
+}
+
+body {
+  margin: 0;
+  background: green;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="brand desktop">
+            <img class="logo" src="Printer_Logo_HD.png">
+        </div>
+        <div class="brand mobile hide">
+            <img class="logo" src="Printer_Logo.png">
+        </div>
+        <div class="menu">
+            <div class="btn_archivo">
+                MIS COTIZACIONES
+            </div>
+            <div class="btn_crear">
+                CREAR COTIZACIÓN
+            </div>
+        </div>
+        <div class="user">
+            <div class="id_name">
+                Iván Pimentel
+            </div>
+            <div class="id_img_frame">
+                <img class="id_img" src="Foto.jpg">
+            </div>
+        </div>
+    </header>
+    <div class="titulo">
+        <p>Nueva Cotización</p>
+    </div>
+    <div class="container_principal">
+        <div class="ficha general">
+            <div class="titulo_ficha">
+                Información general
+            </div>
+            <div class="contenido_ficha">
+                <div class="request first">
+                    <p>Cliente</p>
+                    <input class="input_style cliente" type="text" placeholder="Nombre">
+                </div>
+                <div class="request">
+                        <p>Proyecto</p>
+                        <input class="input_style proyecto" type="text" placeholder="Descripción">
+                </div>
+            </div>
+        </div>
+        <div class="ficha producto">
+            <div class="titulo_ficha">
+                Información del producto
+            </div>
+            <div class="contenido_ficha ficha_producto">
+                <div class="linea_a">
+                    <div class="request first req_producto">
+                        <p>Tipo de producto</p>
+                        <select class="select_style">
+                            <option></option>
+                            <option>Tarjeta de presentación</option>
+                            <option>Separador</option>
+                            <option>Volante</option>
+                            <option>Postal</option>
+                            <option>Díptico</option>
+                            <option>Tríptico</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="request first req_producto">
+                        <p>Cantidad de productos</p>
+                        <input class="input_style numero_producto" type="text">
+                    </div>
+                    <div class="request first medida">
+                        <p>Medidas del producto (cm)</p>
+                        <input class="input_style medida_producto" type="text" placeholder="Anchura">
+                        <n>/</n>
+                        <input class="input_style medida_producto" type="text" placeholder="Altura">
+                    </div>
+                </div>
+                <div class="linea_a">
+                    <div class="request second numero_tintas">
+                        <p>Número de tintas (F / V)</p>
+                        <select class="tintas" name="tintas_frente">
+                            <option>Frente</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <n>/</n>
+                        <select class="tintas" name="tintas_detras">
+                            <option>Vuelta</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>    
+                    </div>
+                    <div class="request second">
+                        <p>Tipo de papel</p>
+                        <select class="select_style">
+                            <option></option>
+                            <optgroup label="Papeles para editorial">
+                                <option>Couche brillante/mate</option>
+                                <option>Bond blanco</option>
+                                <option>Bond ahuesado</option>
+                                <option>Cappuccino</option> 
+                            </optgroup>
+                            <optgroup label="Papeles para envase">
+                                <option>Cartulina Sulfatada</option>
+                                <option>Cartulina Caple</option>
+                           </optgroup>
+                           <optgroup label="Papeles especiales">
+                                <option>Kraft</option>
+                                <option>Papel Opalina</option>
+                                <option>Cartulina Opalina</option>
+                                <option>Papel Stardream</option>
+                                <option>Cartulina Stardream</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="request second">
+                            <p>Puntaje</p>
+                            <select class="select_style">
+                                <option></option>
+                                <option>130 gr/m2</option>
+                                <option>150 gr/m2</option>
+                                <option>250 gr/m2</option>
+                                <option>300 gr/m2</option>
+                            </select>
+                    </div>
+                    <div class="request">
+                        <div class="radio_rebase">
+                            <div class="cr">
+                                <input id="con_rebase" name="rebase" type="radio">
+                                <label for="con_rebase">Con rebase</label>
+                            </div>
+                            <div class="sr">
+                                <input id="con_rebase" name="rebase" type="radio">
+                                <label for="con_rebase">Sin rebase</label>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_secundario">
+        <div class="desglose">
+            <div class="ficha papel">
+                <div class="header_ficha">
+                    <div class="total_ficha">
+                        Papel
+                    </div>
+                    <div class="total_ficha">
+                        Total: $300.00
+                    </div>
+                </div>
+                <div class="contenido_ficha">
+                    <div class="tabla_precios">
+                        <div class="titulos">
+                            <div class="concepto">CONCEPTO</div>
+                            <div class="cantidad">CANTIDAD</div>
+                            <div class="precio_unitario">PRECIO UNITARIO</div>
+                            <div class="precio_total">TOTAL</div>
+                        </div>
+                        <div class="valores">
+                            <div class="concepto">Couche brillante/mate</div>
+                            <div class="cantidad">124 pliegos</div>
+                            <div class="precio_unitario">$2.40</div>
+                            <div class="precio_total">$300.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="ficha papel impresion">
+                <div class="header_ficha">
+                    <div class="total_ficha">
+                        Impresión
+                    </div>
+                    <div class="total_ficha">
+                        Total: $118.00
+                    </div>
+                </div>
+                <div class="contenido_ficha">
+                    <div class="tabla_precios">
+                        <div class="titulos">
+                            <div class="concepto">CONCEPTO</div>
+                            <div class="cantidad">CANTIDAD</div>
+                            <div class="precio_unitario">PRECIO UNITARIO</div>
+                            <div class="precio_total">TOTAL</div>
+                        </div>
+                        <div class="valores">
+                            <div class="concepto">Negativo (tamaño carta)</div>
+                            <div class="cantidad">1</div>
+                            <div class="precio_unitario">$28.00</div>
+                            <div class="precio_total">$28.00</div>
+                        </div>
+                        <div class="valores">
+                            <div class="concepto">Placa (tamaño carta)</div>
+                            <div class="cantidad">1</div>
+                            <div class="precio_unitario">$45.00</div>
+                            <div class="precio_total">$45.00</div>
+                        </div>
+                        <div class="valores">
+                            <div class="concepto">Tiro de impresión</div>
+                            <div class="cantidad">1</div>
+                            <div class="precio_unitario">$45.00</div>
+                            <div class="precio_total">$45.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="ficha papel">
+                <div class="header_ficha">
+                    <div class="total_ficha">
+                        Acabados
+                    </div>
+                    <div class="total_ficha">
+                        Total: $0.00
+                    </div>
+                </div>
+                <div class="contenido_ficha">
+                    <div class="tabla_precios">
+                        <div class="titulos">
+                            <div class="concepto">CONCEPTO</div>
+                            <div class="cantidad">CANTIDAD</div>
+                            <div class="precio_unitario">PRECIO UNITARIO</div>
+                            <div class="precio_total">TOTAL</div>
+                        </div>
+                        <div class="valores">
+                            <div class="concepto">Couche brillante/mate</div>
+                            <div class="cantidad">-</div>
+                            <div class="precio_unitario">$0.00</div>
+                            <div class="precio_total">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="total">
+            <div class="ficha resumen">
+                <div class="header_ficha">
+                    <div class="total_ficha">
+                        Resumen
+                    </div>
+                </div>
+                <div class="contenido_ficha">
+                    <div class="tabla_resumen">
+                        <div class="titulos_resumen">
+                            <div class="concepto">CONCEPTO</div>
+                            <div class="precio_total">TOTAL</div>
+                        </div>
+                        <div class="valores_resumen">
+                            <div class="concepto">Papel</div>
+                            <div class="precio_total">$300.00</div>
+                        </div>
+                        <div class="valores_resumen">
+                            <div class="concepto">Impresión</div>
+                            <div class="precio_total">$118.00</div>
+                        </div>
+                        <div class="valores_resumen">
+                            <div class="concepto">Acabados</div>
+                            <div class="precio_total">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="modal_login">
+        <div class="imagen_side">
+        </div>
+        <div class="login_side">
+            <button class="google_login">
+                Usar cuenta de google
+            </button>
+        </div>
+    </div>
+    -->
+</body>
+</html>
